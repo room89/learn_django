@@ -3,8 +3,8 @@ import requests
 import clients.weather.models as models
 
 def get_weather(city):
-    # https://weatherstack.com/documentation
-    access_key = '4a525fe4deab4bf629b47641eb9afa01'
+    # https://www.weatherbit.io/api/weather-current
+    api_key = 'dc0c2cf4677442d3b043e48a95e0c799'
     response = requests.get(
         'http://api.weatherstack.com/current',
         params={

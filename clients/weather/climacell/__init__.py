@@ -4,7 +4,7 @@ import clients.weather.models as models
 
 def get_weather(city):
     # https://weatherstack.com/documentation
-    access_key = '4a525fe4deab4bf629b47641eb9afa01'
+    access_key = 'DuW5hFu1vJpqjdUSToDHFvWJDvCIFMvA'
     response = requests.get(
         'http://api.weatherstack.com/current',
         params={
