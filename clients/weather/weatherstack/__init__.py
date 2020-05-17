@@ -14,6 +14,5 @@ def get_weather(city):
         }
     )
     temperature = response.json()['current']['temperature']
-    print (response.json())
-    print (type(response.text))
+
     return models.Weather(temperature=temperature)
