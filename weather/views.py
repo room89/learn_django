@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 
-import clients.weather.open_weather_map as weather
+import clients.weather.weatherstack as weather
 
 
 def index(request):
