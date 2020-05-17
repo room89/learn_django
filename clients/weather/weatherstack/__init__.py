@@ -8,7 +8,12 @@ def get_weather(city):
     response = requests.get(
         'http://api.weatherstack.com/current',
         params={
+            'access_key': access_key,
+            'query': city,
+            'units': 's',
         }
     )
-
-    return models.Weather(temperature=273.15)
+    temperature = response.json()['current']['temperature']
+    print (response.json())
+    print (type(response.text))
+    return models.Weather(temperature=temperature)
